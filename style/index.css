@@ -1,1 +1,319 @@
+/* Colors
+
+#a3586d button background
+#5c4a72 Name and text
+#f3b05a 
+#f4874b header and footer background
+#f46a4e
+
+*/
+
+/* Fonts
+
+font-family: 'Open Sans', sans-serif; - links and headers
+font-family: 'Roboto', sans-serif; - paragraphs
+*/
+
+
+
+
+
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background: #f3b05a
+}
+
+
+
+
+/* Utilities */
+
+button {
+  background: #a3586d;
+  border-radius: 10px;
+}
+
+button a {
+  color: #f3b05a;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+h1, a, .name, footer p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bio {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header */
+
+header {
+  background: #f4874b;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 15px;
+}
+
+header nav {
+  padding: 15px;
+  display: flex;
+  margin-left: 1px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 10px 67px;
+  border: 1px solid black;
+  background: #a3586d;
+  color: #f4874b;
+  font-size: 1.5rem;
+}
+
+.first-link-header {
+  background: #f3b05a;
+  color: #a3586d;
+}
+
+/* Section 1 - About Me */
+
+.section-1 {
+  background: #f3b05a;
+}
+
+.image-about-container {
+  display: flex;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+.about {
+  margin: 0 auto;
+  /* margin-left: 17rem; */
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about p {
+  font-size: 2.5rem;
+}
+
+.section-1 button a {
+  padding:  10px 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.name {
+  margin-bottom: 30px;
+}
+
+.bio {
+  margin-top: 30px;
+}
+
+/*Section-2  gallery-flexbox */
+
+.section-2-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.section-2-gallery div {
+  width: 23%;
+}
+
+.section-2-gallery img {
+  margin: 30px 10px;
+}
+
+.section-2-gallery div p {
+  text-align: center;
+}
+
+.section-2-gallery div {
+  margin-bottom: 2rem;
+}
+
+.section-2-gallery p {
+  font-family: 'Roboto', sans-serif; 
+}
+
+
+/* footer */
+
+footer {
+  background:  #f4874b;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer p {
+  font-size: 2rem;
+  padding-top: 30px;
+}
+
+footer p, button {
+  margin: 50px 0;
+}
+
+footer button {
+  margin-top: 0;
+  padding: 15px 25px;
+}
+
+
+
+@media (max-width: 1100px) {
+  .image-about-container {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 10px; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .section-2-gallery div {
+    text-align: center;
+  }
+
+  .section-2-gallery div {
+    width: 33%;
+  }
+}
+
+
+
+
+@media (max-width: 800px) {
+  .section-2-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    align-items: center;
+
+
+} /* ending branch of media query  */
+
+
+
+
+
+
+@media (max-width: 500px) {
+  header nav {
+    padding: 15px;
+    display: flex;
+    margin-left: 1px;
+    flex-direction: column;
+  }
+
+  .about p:last-child{
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  .section-2-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  .section-2-gallery div {
+    width: 50%;
+  }
+
+
+} /* ending branch of media query  */
